@@ -5,12 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="TBMM.MainPage">
-
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Hello World!"
+        FontSize="Large"
+        TextColor="#3D3D3D"
+        HorizontalOptions="Center" />
+        <Button x:Name="but"
+        HorizontalOptions="Center"
+        Text="Click: 0"
+        Clicked="OnButtonClicked" />
+        <Button x:Name="but2"
+        HorizontalOptions="Center"
+        Text="Цена"
+        Clicked="OnButton2Clicked" />
+        <Entry x:Name="texts"    Text="TextBox" />
     </StackLayout>
 
 </ContentPage>
